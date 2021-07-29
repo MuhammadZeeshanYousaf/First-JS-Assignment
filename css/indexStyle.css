@@ -1,0 +1,51 @@
+/* 
+    Created on : Jul 29, 2021, 11:12:27 AM
+    Author     : Zeeshan
+*/
+
+#content{
+    width: 650px;
+    margin: auto;
+    background-color: lightgray;
+    padding: 80px 90px;
+    text-align: center;
+}
+
+button{
+    padding: 8px;
+    border-radius: 6px;
+    border-color: #2ea043;
+    background-color: #238636/*#0D1117*/;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+}
+button:hover{
+    background-color: #2a9a40;
+}
+input{
+    font-size: medium;
+    border-radius: 3px;
+}
+#clearPage{
+    background-color:#0D1117;
+    border: 1px solid white;
+}
+#clearPage:hover{
+    background-color: #282a2e;
+}
+#answer{
+    background-color: #ffffff;
+    box-shadow: 4px 4px 4px #888888;
+    margin-left: 200px;
+    padding: 3px 10px;
+}
+table{
+    border: 1px solid;
+    width: 650px;
+}
+th, tr{
+    padding: 0 60px;
+    border: 1px solid;
+  
+}
