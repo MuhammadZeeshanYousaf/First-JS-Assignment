@@ -31,6 +31,24 @@ function createNewElement(parentClassName, newElementTag, elementClassName, elem
     return newElem;
 }
 
+// Does not allow exponent, addition and subtraction characters in number fields
+function addNumberValidation() {
+    let quantity = document.getElementsByClassName("quantity");
+    let unitPrice = document.getElementsByClassName("unitPrice");
+    const invalidChars = [ "-", "+", "e", "E"];
+
+    for (let i = 0; i < quantity.length; i++) {
+        attachEvent(quantity[i]);
+        attachEvent(unitPrice[i]);
+    }
+
+    function attachEvent(element){
+        element.addEventListener("keydown", function(e) {
+            if (invalidChars.includes(e.key)) e.preventDefault();
+        });
+    }
+}
+
 //add event for calculate button
 document.getElementById("calTotal").addEventListener("click", calculateTotal);
 
