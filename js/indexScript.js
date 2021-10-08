@@ -20,6 +20,7 @@ function addNewProduct(){
     const unitPriceInput = createNewElement(tableData3.className, "input", "unitPrice", count);
     quantityInput.type = unitPriceInput.type = "Number";
     quantityInput.min = unitPriceInput.min = "1";
+    addNumberValidation();
     count++;
 }
 
